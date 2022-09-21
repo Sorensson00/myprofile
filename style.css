@@ -108,6 +108,8 @@ ul {
 
 form {
 	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: center
 }
 
 .form-inline{
@@ -166,8 +168,7 @@ form {
 	background-color:#002B5B; 
 	color:white;
 	font-family: roboto, sans-serif;
-	font-size: 16px;
-	margin-top: 4px;  
+	font-size: 16px;  
 	padding: 8px 32px;
 	border: none;
 	border-radius: 4px;
