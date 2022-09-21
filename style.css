@@ -1,15 +1,14 @@
 body{
-
-background-color: rgb(240,240,240);
-font-size: 16px;
-text-decoration: none;
-text-align: center;
-align-content: center;
-align-items: center;
-word-wrap: break-word;
-max-width: 700px; 
+	background-color: rgb(240,240,240);
+	font-size: 16px;
+	text-decoration: none;
+	text-align: center;
+	align-content: center;
+	align-items: center;
+	word-wrap: break-word;
+	max-width: 700px; 
 	margin: 0 auto !important;  
-	}
+}
 
 h1,h2,a {
 	font-family: roboto, sans-serif;
@@ -20,8 +19,6 @@ h1{
 	font-size: 40px;
 	font-weight: 300;
 	letter-spacing: 5px;
-	line-height: ;
-	font-style: ;
 }
 
 a{
@@ -34,7 +31,20 @@ a{
 
 a:hover {
 	color: rgb(90, 90, 90);
-	transition: color 0,3s ease;
+	transition: 0.1s ease-in-out;
+}
+
+ul {
+	list-style: none;
+	display:inline;
+	font-family: lora, serif;
+	margin-left: 0px;
+}
+
+form {
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: center
 }
 
 /* Design adjustments using class */
@@ -43,6 +53,7 @@ a:hover {
 	margin: 40px auto;
 	word-wrap: break-word;
 }
+
 .card-white {
 	background-color: white;
 	padding: 40px;
@@ -75,9 +86,8 @@ a:hover {
 
 .addbtn-blue:hover {
 	background-color: rgb(90, 90, 90);
-	transition: color 0,3s ease;
+	color: white;
 }
-
 
 .stdtext{
 	font-family: lora, serif;
@@ -91,25 +101,12 @@ a:hover {
 }
 
 .list-inline, .fa-brands{
-	  display:inline-flex;
-	  padding: 5px;
-	  letter-spacing: 5px;
-	  text-align: center;
-	  margin: 0 auto !important;
-	  font-size: 40px;
-}
-
-ul {
-	list-style: none;
-	display:inline;
-	font-family: lora, serif;
-	margin-left: 0px;
-}
-
-form {
-	display: inline-flex;
-	flex-wrap: wrap;
-	justify-content: center
+	display:inline-flex;
+ 	padding: 5px;
+	letter-spacing: 5px;
+	text-align: center;
+	margin: 0 auto !important;
+	font-size: 40px;
 }
 
 .form-inline{
@@ -136,7 +133,7 @@ form {
 	border-color: #2B4865;
 	border-width: 1px;
 	border-radius: 4px;
- }
+}
 
 
 /* Design adjustments using id */
@@ -148,8 +145,9 @@ form {
 	text-align: center;
 }
 
-#formlink:hover{
+#formlink:hover, #osthyvel_link:hover{
 	color: rgb(90, 90, 90);
+	transition: 0.1s ease-in-out;
 }
 
 #osthyvel_link {
@@ -160,11 +158,11 @@ form {
 	text-align: center;
 }
 
-#osthyvel_link:hover{
-	color: rgb(90, 90, 90);
+#card-lesspad {
+	padding: 15px;
 }
 
-#submit {
+#btnsubmit-blue {
 	background-color:#002B5B; 
 	color:white;
 	font-family: roboto, sans-serif;
@@ -176,9 +174,45 @@ form {
 	margin: 20px auto;
 }
 
-#submit:hover {
+#btnsubmit-blue:hover {
 	background-color: rgb(90, 90, 90);
-	transition: color 0,3s ease;
+	transition: 0.1s ease-in-out;
 }
 
+/* @media */
 
+@media (max-width: 700px) {
+	.container{ 
+	width: 600px;
+	 }
+	.form1-inline, .form2-inline, .form3-inline{
+ 	margin-left: 5px;
+ 	margin-right: 5px;
+ 	}
+ 	.img-oval {
+	height: auto; 
+    width: auto; 
+    max-width: 350px; 
+    max-height: 350px;
+    border-radius: 50%;
+	}
+}
+
+@media (max-width: 500px) {
+	.container{ 
+	width: 400px;
+	 }
+	form {
+	flex-direction: column;
+ 	}
+ 	.form1-inline, .form2-inline, .form3-inline{
+ 		margin-top: 5px;
+ 	}
+ 	.img-oval {
+	height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 300px;
+    border-radius: 50%;
+	}
+}
